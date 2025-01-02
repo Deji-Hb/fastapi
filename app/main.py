@@ -1,4 +1,6 @@
 #command to create a virtual environment is py -3 -m venv <name>
+import os 
+import uvicorn
 from fastapi import FastAPI
 from . import models
 from .database import engine
@@ -40,3 +42,7 @@ def root():
     return {"message": "Hello world"}
 
 
+if __name__ == "__main__":
+    # Retrieve the port from environment variables or default to 8000
+    port = int(os.environ.get("PORT", 8000))
+    uvicorn.run(app, host="0.0.0.0", port=port, reload=True)
