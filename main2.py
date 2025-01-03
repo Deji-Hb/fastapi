@@ -13,3 +13,5 @@ import os
 path = os.getenv("MY_DB_URL")
 print(path)
 #alembic heads shows the latest head
+#do not run alembic revision on our production server. You only run it on the development serve
+#on the production server we do a git push

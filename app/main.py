@@ -39,10 +39,10 @@ app.include_router(vote.router)
 # the order of retrieving data from get method matters first one will be passed first
 @app.get("/")
 def root():
-    return {"message": "Hello world"}
+    return {"message": "Hello world1234"}
 
 
 if __name__ == "__main__":
     # Retrieve the port from environment variables or default to 8000
     port = int(os.environ.get("PORT", 8000))
-    uvicorn.run(app, host="0.0.0.0", port=port, reload=True)
+    uvicorn.run(app, host="0.0.0.0", port=port)
