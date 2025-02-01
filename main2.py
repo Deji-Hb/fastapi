@@ -15,3 +15,4 @@ print(path)
 #alembic heads shows the latest head
 #do not run alembic revision on our production server. You only run it on the development serve
 #on the production server we do a git push
+#NGINX is a high performance web server that can ast as a proxy and is used to perform ssl termination

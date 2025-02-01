@@ -39,8 +39,31 @@ app.include_router(vote.router)
 # the order of retrieving data from get method matters first one will be passed first
 @app.get("/")
 def root():
-    return {"message": "Hello world1234"}
+    return {"message": "Hello Dejigit"}
 
+
+# def add(num1, num2):
+#     return (num1 + num2)
+# def subtract(num1, num2):
+#     return (num1 - num2)
+# def multiply(num1, num2):
+#     return (num1 * num2)
+
+# def Calculator(action, num1, num2):
+#     if action == "add":
+#         return add(num1=num1, num2=num2)
+#     if action == "subtract":
+#         return subtract(num1=num1, num2=num2)
+#     if action == "multiply":
+#         return multiply(num1=num1, num2=num2)
+
+
+# @app.get("/cal")
+# def mehhh(
+#     action: str, num1: int, num2: int
+# ):
+#     ans = Calculator(action=action, num1=num1, num2=num2)
+#     return f"Suck mah ballz, the answer is {ans}"
 
 if __name__ == "__main__":
     # Retrieve the port from environment variables or default to 8000
