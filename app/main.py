@@ -39,7 +39,7 @@ app.include_router(vote.router)
 # the order of retrieving data from get method matters first one will be passed first
 @app.get("/")
 def root():
-    return {"message": "Hello Dejigit"}
+    return {"message": "Hello Deji"}
 
 
 # def add(num1, num2):
