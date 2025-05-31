@@ -1,0 +1,4 @@
+#to choose what you don't want to upload to git
+__pycache__
+pro1
+.env
